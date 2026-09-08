@@ -1,10 +1,8 @@
 /* =========================================================
-   TEDxIGDTUW — BOLLYWOOD CASTING EXPERIENCE
-   SCRIPT.JS
-   PREFERENCE 1 + PREFERENCE 2
+   TEDxIGDTU | BOLLYWOOD CASTING EXPERIENCE
+   CLEAN BRAND VERSION
    ========================================================= */
 
-// REPLACE THIS WITH YOUR BACKEND DEVELOPER'S GOOGLE APPS SCRIPT WEB APP URL
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbx613pKHKn3KZvBk6ZR-IwKrouwyWV_Y1pbSz5GqBgV2KMwJ7ilVY6QvC_MypZiXZkh/exec";
 
@@ -16,7 +14,14 @@ const SCRIPT_URL =
 const domainData = {
 
   "Community and Delegate Affairs": {
-    icon: "🤝",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="17" cy="9" r="2.3" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M3.5 19c.5-3.1 2.3-5 5.5-5s5 1.9 5.5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M14.5 15.2c2.7-.1 4.8 1.1 5.5 3.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    `,
     character: "Geet",
     role: "The Crowd Commander",
     tagline:
@@ -28,11 +33,17 @@ const domainData = {
   },
 
   "Content and Writing": {
-    icon: "✍️",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m5 19 2.2-6.7L16.8 2.7a2.2 2.2 0 0 1 3.1 3.1L10.3 15.4 5 19Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="m14.8 4.7 4.5 4.5M7.3 12.7l4 4" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M4 21h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    `,
     character: "Bunny",
     role: "The Narrative Architect",
     tagline:
-      "Part storyteller, part strategist — crafting captions that stop the scroll and speaker scripts that leave a mark.",
+      "Part storyteller, part strategist, crafting captions that stop the scroll and speaker scripts that leave a mark.",
     quote:
       "\"Ek acchi kahani wahi hai jo dimaag mein nahi, seedha dil mein utar jaye.\"",
     scene:
@@ -40,19 +51,30 @@ const domainData = {
   },
 
   "Events, Brands, and People": {
-    icon: "🎤",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 18V10l8-5 8 5v8" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M7 18v-5h10v5M3 20h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M10 13h4" stroke="currentColor" stroke-width="1.7"/>
+      </svg>
+    `,
     character: "Rancho",
     role: "The Mastermind Showrunner",
     tagline:
       "Calm inside the storm, obsessed with seamless execution, and quick to fix any backstage glitch.",
     quote:
-      "\"Execution mein perfection aur situation mein patience — bas yahi chahiye.\"",
+      "\"Execution mein perfection aur situation mein patience, bas yahi chahiye.\"",
     scene:
       "The spotlight is on, the clock is ticking, and a technical glitch occurs mid-stage. You're the one managing the timeline, directing backstage crew, and guaranteeing a flawless audience experience."
   },
 
   "Media and Communication": {
-    icon: "📹",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7"/>
+        <path d="m10 9 5 3-5 3V9Z" fill="currentColor"/>
+      </svg>
+    `,
     character: "Ved",
     role: "The Visual Auteur",
     tagline:
@@ -64,31 +86,49 @@ const domainData = {
   },
 
   "PR (Public Relations)": {
-    icon: "📣",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 10.5 14 6v12L4 13.5v-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M14 9.5h3.5A2.5 2.5 0 0 1 20 12a2.5 2.5 0 0 1-2.5 2.5H14M7 14l1.5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    `,
     character: "Kabir",
     role: "The Strategic Pitcher",
     tagline:
-      "Persistent, highly persuasive, and capable of turning a flat 'no' into an event-changing partnership.",
+      "Persistent, highly persuasive, and capable of turning a flat no into an event-changing partnership.",
     quote:
       "\"Har rejection bas agle bade deal ka pehla step hota hai.\"",
     scene:
-      "Event week is around the corner and registration targets need a boost. You're on the front lines—drafting cold pitches, calling partners, and driving public reach."
+      "Event week is around the corner and registration targets need a boost. You're on the front lines, drafting cold pitches, calling partners, and driving public reach."
   },
 
   "Creative, Strategy and Design": {
-    icon: "🎨",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 3a9 9 0 1 0 0 18h1.5a2 2 0 0 0 1.4-3.4 2 2 0 0 1 1.4-3.4H18A3 3 0 0 0 21 11.2 8.9 8.9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="7.5" cy="10" r="1" fill="currentColor"/>
+        <circle cx="10" cy="6.8" r="1" fill="currentColor"/>
+        <circle cx="14.2" cy="6.8" r="1" fill="currentColor"/>
+      </svg>
+    `,
     character: "Poo",
     role: "The Design Perfectionist",
     tagline:
       "Uncompromising on brand aesthetic, master of design tools, and bold enough to create visual identities from scratch.",
     quote:
-      "\"Design aisa hona chahiye ki dekhte hi kehna pade... 'Tell me how it looks!'\"",
+      "\"Design aisa hona chahiye ki dekhte hi kehna pade, tell me how it looks!\"",
     scene:
       "Blank Figma boards, strict guidelines, and last-minute feedback rounds. Your mission is turning conceptual theme briefs into iconic visual assets."
   },
 
   "Sponsorship and Strategic Alliances": {
-    icon: "💼",
+    icon: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M7 12h3.5a2.5 2.5 0 0 0 0-5H8l-2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M17 12h-3.5a2.5 2.5 0 0 1 0-5H16l2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="m8.5 12 2 2a2.2 2.2 0 0 0 3 0l2-2M12 14v4M9.5 18h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    `,
     character: "Munna Bhai",
     role: "The Deal Closer",
     tagline:
@@ -110,32 +150,27 @@ const domainQuestions = {
   "Community and Delegate Affairs": [
     {
       id: "q1",
-      label:
-        "Tell us about one responsibility or project you have handled before. What was your specific contribution, and what was the outcome?",
+      label: "Tell us about one responsibility or project you have handled before. What was your specific contribution, and what was the outcome?",
       req: true
     },
     {
       id: "q2",
-      label:
-        "If you are assigned a task with a deadline but realise you may not be able to complete it on time, what would you do?",
+      label: "If you are assigned a task with a deadline but realise you may not be able to complete it on time, what would you do?",
       req: true
     },
     {
       id: "q3",
-      label:
-        "A delegate approaches you with a problem that you do not know how to solve. How would you handle the situation?",
+      label: "A delegate approaches you with a problem that you do not know how to solve. How would you handle the situation?",
       req: true
     },
     {
       id: "q4",
-      label:
-        "Imagine 100+ attendees arrive at once and the registration desk becomes chaotic. What would you do to manage the situation?",
+      label: "Imagine 100+ attendees arrive at once and the registration desk becomes chaotic. What would you do to manage the situation?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "Why should we choose you as a Coordinator over someone with similar skills and experience?",
+      label: "Why should we choose you as a Coordinator over someone with similar skills and experience?",
       req: true
     }
   ],
@@ -143,32 +178,27 @@ const domainQuestions = {
   "Content and Writing": [
     {
       id: "q1",
-      label:
-        "What makes you a good fit for Content & Writing (Answer in 40-50 words)",
+      label: "What makes you a good fit for Content & Writing? Answer in 40 to 50 words.",
       req: true
     },
     {
       id: "q2",
-      label:
-        "Through your skills, Write a Sponsorship invite mail to a Skincare brand. Kindly do not use AI",
+      label: "Through your skills, write a sponsorship invite mail to a skincare brand. Kindly do not use AI.",
       req: true
     },
     {
       id: "q3",
-      label:
-        "In 40-50 words describe the colour Red",
+      label: "In 40 to 50 words, describe the colour red.",
       req: true
     },
     {
       id: "q4",
-      label:
-        "Content & Writing is a crucial dept, how would you contribute to it? ",
+      label: "Content & Writing is a crucial department. How would you contribute to it?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "Any changes you would like to suggest to the existing Content & Writing team. If yes, please state. ",
+      label: "Any changes you would like to suggest to the existing Content & Writing team? If yes, please state.",
       req: true
     }
   ],
@@ -176,32 +206,27 @@ const domainQuestions = {
   "Events, Brands, and People": [
     {
       id: "q1",
-      label:
-        "What elements, according to you, make an event feel memorable and well branded?",
+      label: "What elements, according to you, make an event feel memorable and well branded?",
       req: true
     },
     {
       id: "q2",
-      label:
-        "You have limited time and resources. Would you rather make one thing excellent or make three things reasonably good? Give an example of when your answer would change.",
+      label: "You have limited time and resources. Would you rather make one thing excellent or make three things reasonably good? Give an example of when your answer would change.",
       req: true
     },
     {
       id: "q3",
-      label:
-        "If you had to choose between making the event visually impressive and making the attendee experience unforgettable, which would you prioritise and why? Would you ever change your answer?",
+      label: "If you had to choose between making the event visually impressive and making the attendee experience unforgettable, which would you prioritise and why? Would you ever change your answer?",
       req: true
     },
     {
       id: "q4",
-      label:
-        "What is one thing you would never compromise on while managing a team, even if it made your job harder?",
+      label: "What is one thing you would never compromise on while managing a team, even if it made your job harder?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "How would you handle an unexpected delay or technical glitch during a live stage performance?",
+      label: "How would you handle an unexpected delay or technical glitch during a live stage performance?",
       req: true
     }
   ],
@@ -209,32 +234,27 @@ const domainQuestions = {
   "Media and Communication": [
     {
       id: "q1",
-      label:
-        "Share a link to your best media work (reel, video, post, or design) that you're proud of.",
+      label: "Share a link to your best media work, reel, video, post, or design that you're proud of.",
       req: true
     },
     {
       id: "q2",
-      label:
-        "Tell us something about yourself that you think makes you different from others.",
+      label: "Tell us something about yourself that you think makes you different from others.",
       req: true
     },
     {
       id: "q3",
-      label:
-        "Give us ONE idea that you would implement in our society if you were selected.",
+      label: "Give us ONE idea that you would implement in our society if you were selected.",
       req: true
     },
     {
       id: "q4",
-      label:
-        "Imagine we give you a boring announcement: “Registrations for our event are now open.” How would you turn it into an engaging Instagram Reel?",
+      label: "Imagine we give you a boring announcement: \"Registrations for our event are now open.\" How would you turn it into an engaging Instagram Reel?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "If two team members have a creative conflict during a shoot, how would you handle it?",
+      label: "If two team members have a creative conflict during a shoot, how would you handle it?",
       req: true
     }
   ],
@@ -242,32 +262,27 @@ const domainQuestions = {
   "PR (Public Relations)": [
     {
       id: "q1",
-      label:
-        "Why do you want to join the PR team of TEDxIGDTUW?",
+      label: "Why do you want to join the PR team of TEDxIGDTU?",
       req: true
     },
     {
       id: "q2",
-      label:
-        "How active and available can you be for TEDx, especially during events and important deadlines?",
+      label: "How active and available can you be for TEDx, especially during events and important deadlines?",
       req: true
     },
     {
       id: "q3",
-      label:
-        "What is one skill you have that would help you in the PR team?",
+      label: "What is one skill you have that would help you in the PR team?",
       req: true
     },
     {
       id: "q4",
-      label:
-        "PR involves rejection, follow-ups, and last-minute work. How would you handle such situations?",
+      label: "PR involves rejection, follow-ups, and last-minute work. How would you handle such situations?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "Suppose TEDx IGDTU has an event next week, but the registrations are very low. What would you do as a PR team member to increase registrations?",
+      label: "Suppose TEDxIGDTU has an event next week, but the registrations are very low. What would you do as a PR team member to increase registrations?",
       req: true
     }
   ],
@@ -275,32 +290,27 @@ const domainQuestions = {
   "Creative, Strategy and Design": [
     {
       id: "q1",
-      label:
-        "What is your design philosophy? Mention the tools you use such as Figma, Illustrator, Photoshop, or Canva.",
+      label: "What is your design philosophy? Mention the tools you use such as Figma, Illustrator, Photoshop, or Canva.",
       req: true
     },
     {
       id: "q2",
-      label:
-        "Share a link to your design portfolio, Behance, or Google Drive.",
+      label: "Share a link to your design portfolio, Behance, or Google Drive.",
       req: true
     },
     {
       id: "q3",
-      label:
-        "How do you approach designing a fresh brand visual identity from scratch?",
+      label: "How do you approach designing a fresh brand visual identity from scratch?",
       req: true
     },
     {
       id: "q4",
-      label:
-        "How do you react to critical feedback or requests to completely redesign a piece of artwork?",
+      label: "How do you react to critical feedback or requests to completely redesign a piece of artwork?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "Describe a recent brand campaign or visual banner design that inspired you and explain why.",
+      label: "Describe a recent brand campaign or visual banner design that inspired you and explain why.",
       req: true
     }
   ],
@@ -308,32 +318,27 @@ const domainQuestions = {
   "Sponsorship and Strategic Alliances": [
     {
       id: "q1",
-      label:
-        "If you had to approach a brand for sponsorship, how would you convince them to associate with us?",
+      label: "If you had to approach a brand for sponsorship, how would you convince them to associate with us?",
       req: true
     },
     {
       id: "q2",
-      label:
-        "Suppose a brand agrees to sponsor us but asks for something we cannot provide. How would you handle the situation?",
+      label: "Suppose a brand agrees to sponsor us but asks for something we cannot provide. How would you handle the situation?",
       req: true
     },
     {
       id: "q3",
-      label:
-        "You have contacted 10 brands but haven't received any response. What would you do next?",
+      label: "You have contacted 10 brands but haven't received any response. What would you do next?",
       req: true
     },
     {
       id: "q4",
-      label:
-        "Tell us about a time when you had to convince someone or negotiate with them. What did you do and what was the outcome?",
+      label: "Tell us about a time when you had to convince someone or negotiate with them. What did you do and what was the outcome?",
       req: true
     },
     {
       id: "q5",
-      label:
-        "Imagine you have to pitch TEDxIGDTUW to a brand you've never contacted before. What would your message/email look like?",
+      label: "Imagine you have to pitch TEDxIGDTU to a brand you've never contacted before. What would your message or email look like?",
       req: true
     }
   ]
@@ -368,11 +373,6 @@ function updatePreference2Options() {
 
   const selectedPreference1 = preference1.value;
 
-  /*
-   * Preference 2 remains optional.
-   * It becomes usable once Preference 1 has been selected.
-   */
-
   preference2.disabled = !selectedPreference1;
 
   Array.from(preference2.options).forEach(option => {
@@ -386,11 +386,6 @@ function updatePreference2Options() {
       !!selectedPreference1 &&
       option.value === selectedPreference1;
   });
-
-  /*
-   * If Preference 1 is changed and becomes the same as Preference 2,
-   * automatically clear Preference 2.
-   */
 
   if (
     selectedPreference1 &&
@@ -439,7 +434,7 @@ function updateCastingPreview() {
   preview.classList.add("revealed");
 
   let characterText =
-    `🎬 Preference 1: ${data1.character} — ${data1.role}`;
+    `Preference 1: ${data1.character} | ${data1.role}`;
 
   let descriptionText =
     data1.tagline;
@@ -452,10 +447,10 @@ function updateCastingPreview() {
     const data2 = domainData[preference2];
 
     characterText +=
-      ` | Preference 2: ${data2.character} — ${data2.role}`;
+      ` | Preference 2: ${data2.character} | ${data2.role}`;
 
     descriptionText =
-      `${data1.tagline} • Second choice: ${data2.tagline}`;
+      `${data1.tagline} Second choice: ${data2.tagline}`;
   }
 
   character.textContent = characterText;
@@ -472,10 +467,6 @@ function goToPage(pageNumber) {
   const currentActivePage =
     getCurrentActivePageNumber();
 
-  /*
-   * Validate current page before moving forward.
-   */
-
   if (pageNumber > currentActivePage) {
 
     if (!validatePage(currentActivePage)) {
@@ -488,10 +479,6 @@ function goToPage(pageNumber) {
     }
   }
 
-  /*
-   * Page 2 requires Preference 1.
-   */
-
   if (
     pageNumber === 2 &&
     !getSelectedPreference1()
@@ -503,10 +490,6 @@ function goToPage(pageNumber) {
 
     return;
   }
-
-  /*
-   * Make sure Preference 2 is not same as Preference 1.
-   */
 
   if (
     pageNumber === 2 &&
@@ -521,19 +504,11 @@ function goToPage(pageNumber) {
     return;
   }
 
-  /*
-   * Toggle theme override for Page 1.
-   */
-
   if (pageNumber === 1) {
     document.body.classList.add("page-1-active");
   } else {
     document.body.classList.remove("page-1-active");
   }
-
-  /*
-   * Update page visibility.
-   */
 
   document.querySelectorAll(".form-page").forEach(page => {
     page.classList.remove("active");
@@ -545,10 +520,6 @@ function goToPage(pageNumber) {
   if (targetPage) {
     targetPage.classList.add("active");
   }
-
-  /*
-   * Update progress bar indicators.
-   */
 
   for (let i = 1; i <= 3; i++) {
 
@@ -564,13 +535,7 @@ function goToPage(pageNumber) {
     }
   }
 
-  /*
-   * Render both preference experiences/questions
-   * whenever Page 2 opens.
-   */
-
   if (pageNumber === 2) {
-
     renderCharacterExperience();
     renderDomainQuestions();
   }
@@ -650,17 +615,14 @@ function renderCharacterExperience() {
   const characterCard =
     document.getElementById("characterCard");
 
-
-  /* Preference 1 */
-
   if (characterIcon) {
-    characterIcon.textContent =
+    characterIcon.innerHTML =
       data1.icon;
   }
 
   if (characterName) {
     characterName.textContent =
-      `${data1.character} — ${data1.role}`;
+      `${data1.character} | ${data1.role}`;
   }
 
   if (characterTagline) {
@@ -684,7 +646,7 @@ function renderCharacterExperience() {
         domainData[preference2];
 
       domainDescription.textContent =
-        `You've been cast for two scenes — Preference 1: ${data1.character}, and Preference 2: ${data2.character}. Let's see how you handle both.`;
+        `You've been cast for two scenes. Preference 1: ${data1.character}. Preference 2: ${data2.character}. Let's see how you handle both.`;
 
     } else {
 
@@ -720,10 +682,6 @@ function renderDomainQuestions() {
 
   container.innerHTML = "";
 
-  /*
-   * Preference 1
-   */
-
   if (
     preference1 &&
     domainQuestions[preference1]
@@ -735,12 +693,6 @@ function renderDomainQuestions() {
       1
     );
   }
-
-  /*
-   * Preference 2
-   *
-   * Only rendered if the user selected it.
-   */
 
   if (
     preference2 &&
@@ -774,21 +726,11 @@ function renderPreferenceQuestionSection(
 
   if (!data || !questions) return;
 
-
-  /*
-   * Section wrapper
-   */
-
   const section =
     document.createElement("div");
 
   section.className =
     "preference-question-section";
-
-
-  /*
-   * Heading
-   */
 
   const heading =
     document.createElement("div");
@@ -796,30 +738,22 @@ function renderPreferenceQuestionSection(
   heading.className =
     "preference-question-heading";
 
-
   const headingTitle =
     document.createElement("h3");
 
   headingTitle.textContent =
-    `Preference ${preferenceNumber} — ${selectedDomain}`;
-
+    `Preference ${preferenceNumber} | ${selectedDomain}`;
 
   const headingDescription =
     document.createElement("p");
 
   headingDescription.textContent =
-    `${data.icon} ${data.character} — ${data.role}. ${data.scene}`;
-
+    `${data.character} | ${data.role}. ${data.scene}`;
 
   heading.appendChild(headingTitle);
   heading.appendChild(headingDescription);
 
   section.appendChild(heading);
-
-
-  /*
-   * Questions
-   */
 
   questions.forEach((question, index) => {
 
@@ -829,27 +763,11 @@ function renderPreferenceQuestionSection(
     group.className =
       "form-group";
 
-
-    /*
-     * IMPORTANT:
-     *
-     * P1 IDs:
-     * preference1_q1
-     * preference1_q2
-     * ...
-     *
-     * P2 IDs:
-     * preference2_q1
-     * preference2_q2
-     * ...
-     */
-
     const fieldId =
       `preference${preferenceNumber}_q${index + 1}`;
 
     const errorId =
       `err-${fieldId}`;
-
 
     const label =
       document.createElement("label");
@@ -865,7 +783,6 @@ function renderPreferenceQuestionSection(
           ? '<span class="req">*</span>'
           : ""
       }`;
-
 
     const textarea =
       document.createElement("textarea");
@@ -886,7 +803,6 @@ function renderPreferenceQuestionSection(
       textarea.required = true;
     }
 
-
     const errorSpan =
       document.createElement("span");
 
@@ -899,14 +815,12 @@ function renderPreferenceQuestionSection(
     errorSpan.innerText =
       "This field is required.";
 
-
     group.appendChild(label);
     group.appendChild(textarea);
     group.appendChild(errorSpan);
 
     section.appendChild(group);
   });
-
 
   container.appendChild(section);
 }
@@ -956,27 +870,16 @@ function validatePage(page) {
     return false;
   }
 
-
-  /*
-   * Clear previous validation states
-   */
-
   currentPageEl
     .querySelectorAll(".form-group.invalid")
     .forEach(group => {
       group.classList.remove("invalid");
     });
 
-
-  /*
-   * Validate required fields
-   */
-
   const inputs =
     currentPageEl.querySelectorAll(
       "input[required], select[required], textarea[required]"
     );
-
 
   inputs.forEach(input => {
 
@@ -993,7 +896,6 @@ function validatePage(page) {
         ? input.value.trim()
         : "";
 
-
     if (!val) {
 
       parent.classList.add("invalid");
@@ -1002,11 +904,6 @@ function validatePage(page) {
 
       return;
     }
-
-
-    /*
-     * Phone validation
-     */
 
     if (
       input.id === "phone" &&
@@ -1019,11 +916,6 @@ function validatePage(page) {
 
       return;
     }
-
-
-    /*
-     * Personal Gmail validation
-     */
 
     if (
       input.id === "personalEmail" &&
@@ -1040,12 +932,6 @@ function validatePage(page) {
     }
 
   });
-
-
-  /*
-   * Extra safety:
-   * Preference 2 cannot equal Preference 1.
-   */
 
   if (page === 1) {
 
@@ -1074,15 +960,6 @@ function validatePage(page) {
     }
   }
 
-
-  /*
-   * Page 2:
-   * validate dynamically rendered questions.
-   *
-   * Preference 1 required fields are validated.
-   * Preference 2 fields are validated only when P2 exists.
-   */
-
   if (page === 2) {
 
     const preference1 =
@@ -1091,16 +968,11 @@ function validatePage(page) {
     const preference2 =
       getSelectedPreference2();
 
-
     if (!preference1) {
 
       isValid = false;
 
     } else {
-
-      /*
-       * Validate Preference 1 questions
-       */
 
       if (domainQuestions[preference1]) {
 
@@ -1134,12 +1006,6 @@ function validatePage(page) {
         );
       }
     }
-
-
-    /*
-     * Validate Preference 2 questions only
-     * if Preference 2 is selected.
-     */
 
     if (
       preference2 &&
@@ -1179,7 +1045,6 @@ function validatePage(page) {
 
   }
 
-
   return isValid;
 }
 
@@ -1213,11 +1078,9 @@ function showSuccessPage() {
   const preference2 =
     getSelectedPreference2();
 
-
   document.body.classList.remove(
     "page-1-active"
   );
-
 
   document
     .querySelectorAll(".form-page")
@@ -1225,23 +1088,19 @@ function showSuccessPage() {
       page.classList.remove("active");
     });
 
-
   const successPage =
     document.getElementById(
       "page-success"
     );
 
-
   if (successPage) {
     successPage.classList.add("active");
   }
-
 
   const successRole =
     document.getElementById(
       "successRole"
     );
-
 
   if (successRole) {
 
@@ -1253,26 +1112,20 @@ function showSuccessPage() {
         ? domainData[preference2]
         : null;
 
-
     if (data1 && data2) {
 
       successRole.innerHTML =
-        `${data1.icon} ${preference1}<br>` +
+        `${preference1}<br>` +
         `<span style="display:block;margin-top:5px;">` +
-        `🎬 ${preference2}` +
+        `${preference2}` +
         `</span>`;
 
     } else if (data1) {
 
       successRole.textContent =
-        `${data1.icon} ${preference1}`;
+        preference1;
     }
   }
-
-
-  /*
-   * Remove progress indicator highlight
-   */
 
   document
     .querySelectorAll(".step-indicator")
@@ -1280,18 +1133,12 @@ function showSuccessPage() {
       dot.classList.remove("active");
     });
 
-
-  /*
-   * Countdown
-   */
-
   let seconds = 7;
 
   const countdownEl =
     document.getElementById(
       "countdown"
     );
-
 
   const timer =
     setInterval(() => {
@@ -1323,14 +1170,9 @@ document.addEventListener(
   "DOMContentLoaded",
   () => {
 
-    /*
-     * Initial Page 1 theme
-     */
-
     document.body.classList.add(
       "page-1-active"
     );
-
 
     const domainSelect =
       document.getElementById(
@@ -1342,10 +1184,7 @@ document.addEventListener(
         "domain2"
       );
 
-
-    /* =====================================================
-       PREFERENCE 1 CHANGE
-       ===================================================== */
+    /* Preference 1 */
 
     if (domainSelect) {
 
@@ -1353,25 +1192,14 @@ document.addEventListener(
         "change",
         () => {
 
-          /*
-           * Update available P2 options first.
-           */
-
           updatePreference2Options();
-
-          /*
-           * Update preview.
-           */
-
           updateCastingPreview();
+
         }
       );
     }
 
-
-    /* =====================================================
-       PREFERENCE 2 CHANGE
-       ===================================================== */
+    /* Preference 2 */
 
     if (domainSelect2) {
 
@@ -1384,11 +1212,6 @@ document.addEventListener(
 
           const preference2 =
             getSelectedPreference2();
-
-
-          /*
-           * Never allow duplicate preferences.
-           */
 
           if (
             preference1 &&
@@ -1405,53 +1228,31 @@ document.addEventListener(
             return;
           }
 
-
           clearFieldError(
             domainSelect2
           );
 
           updateCastingPreview();
+
         }
       );
     }
 
-
-    /*
-     * Initialize Preference 2.
-     */
-
     updatePreference2Options();
-
     updateCastingPreview();
-
-
-    /* =====================================================
-       FORM
-       ===================================================== */
 
     const form =
       document.getElementById(
         "recruitmentForm"
       );
 
-
     if (!form) return;
-
-
-    /* =====================================================
-       FORM SUBMISSION
-       ===================================================== */
 
     form.addEventListener(
       "submit",
       async function(e) {
 
         e.preventDefault();
-
-
-        /*
-         * Validate Page 3
-         */
 
         if (!validatePage(3)) {
 
@@ -1462,31 +1263,22 @@ document.addEventListener(
           return;
         }
 
-
-        /*
-         * Extra validation of Page 1 and Page 2
-         */
-
         if (!validatePage(1)) {
 
           alert(
             "Please check your student details and preferences."
           );
 
+          goToPage(1);
+
           return;
         }
-
 
         if (!validatePage(2)) {
 
           alert(
             "Please complete all required audition questions."
           );
-
-          /*
-           * Go back to Page 2 so user can see
-           * which question needs attention.
-           */
 
           document
             .querySelectorAll(".form-page")
@@ -1505,32 +1297,24 @@ document.addEventListener(
           return;
         }
 
-
         const submitBtn =
           document.getElementById(
             "submitBtn"
           );
-
 
         if (submitBtn) {
 
           submitBtn.disabled = true;
 
           submitBtn.innerText =
-            "🎬 ROLLING CREDITS...";
+            "ROLLING CREDITS...";
         }
-
-
-        /* =================================================
-           SELECTED PREFERENCES
-           ================================================= */
 
         const preference1 =
           getSelectedPreference1();
 
         const preference2 =
           getSelectedPreference2();
-
 
         const data1 =
           domainData[preference1];
@@ -1540,27 +1324,13 @@ document.addEventListener(
             ? domainData[preference2]
             : null;
 
-
-        /* =================================================
-           COLLECT ANSWERS
-           ================================================= */
-
         const preference1Answers =
           collectPreferenceAnswers(1);
 
         const preference2Answers =
           collectPreferenceAnswers(2);
 
-
-        /* =================================================
-           FORM DATA
-           ================================================= */
-
         const formData = {
-
-          /*
-           * Student details
-           */
 
           fullName:
             document
@@ -1602,23 +1372,11 @@ document.addEventListener(
               .value
               .trim() || "N/A",
 
-
-          /*
-           * ===============================================
-           * NEW PREFERENCE FIELDS
-           * ===============================================
-           */
-
           preference1:
             preference1,
 
           preference2:
             preference2 || "",
-
-
-          /*
-           * Character personas
-           */
 
           characterPersona1:
             data1
@@ -1629,13 +1387,6 @@ document.addEventListener(
             data2
               ? data2.character
               : "",
-
-
-          /*
-           * ===============================================
-           * NEW PREFERENCE 1 QUESTIONS
-           * ===============================================
-           */
 
           preference1_q1:
             preference1Answers.q1,
@@ -1652,13 +1403,6 @@ document.addEventListener(
           preference1_q5:
             preference1Answers.q5,
 
-
-          /*
-           * ===============================================
-           * NEW PREFERENCE 2 QUESTIONS
-           * ===============================================
-           */
-
           preference2_q1:
             preference2Answers.q1,
 
@@ -1673,25 +1417,6 @@ document.addEventListener(
 
           preference2_q5:
             preference2Answers.q5,
-
-
-          /*
-           * ===============================================
-           * OLD BACKEND COMPATIBILITY
-           * ===============================================
-           *
-           * Existing backend can continue reading:
-           *
-           * domain
-           * characterPersona
-           * q1
-           * q2
-           * q3
-           * q4
-           * q5
-           *
-           * These correspond to Preference 1.
-           */
 
           domain:
             preference1,
@@ -1716,15 +1441,11 @@ document.addEventListener(
           q5:
             preference1Answers.q5,
 
-
-          /*
-           * Social details
-           */
-
           socialFollow:
             document
               .getElementById("socialFollow")
-              .value,
+              .value
+              .trim(),
 
           socialHandle:
             document
@@ -1732,11 +1453,6 @@ document.addEventListener(
               .value
               .trim()
         };
-
-
-        /* =================================================
-           SEND TO BACKEND
-           ================================================= */
 
         try {
 
@@ -1756,21 +1472,14 @@ document.addEventListener(
               }
             );
 
-
           const result =
             await response.json();
-
-
-          /* =================================================
-             SUCCESS
-             ================================================= */
 
           if (
             result.status === "SUCCESS"
           ) {
 
             showSuccessPage();
-
 
           } else if (
             result.code ===
@@ -1781,16 +1490,14 @@ document.addEventListener(
               "This enrollment number has already been registered!"
             );
 
-
             if (submitBtn) {
 
               submitBtn.disabled =
                 false;
 
               submitBtn.innerText =
-                "🎬 SUBMIT MY AUDITION";
+                "Submit My Audition";
             }
-
 
           } else {
 
@@ -1800,7 +1507,6 @@ document.addEventListener(
             );
           }
 
-
         } catch (error) {
 
           console.error(
@@ -1808,11 +1514,9 @@ document.addEventListener(
             error
           );
 
-
           alert(
             "There was an issue submitting your audition. Please check your internet connection or try again."
           );
-
 
           if (submitBtn) {
 
@@ -1820,7 +1524,7 @@ document.addEventListener(
               false;
 
             submitBtn.innerText =
-              "🎬 SUBMIT MY AUDITION";
+              "Submit My Audition";
           }
         }
 
