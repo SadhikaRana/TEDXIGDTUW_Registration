@@ -36,7 +36,7 @@ const domainData = {
     character: "Ved",
     role: "The Visual Auteur",
     tagline: "Seeing extraordinary frames in ordinary moments, turning standard announcements into viral visual experiences.",
-    quote: "\"Kamera sirf recording nahi karta, feeling capture karta hai.\"",
+    quote: "\"Camera sirf recording nahi karta, feeling capture karta hai.\"",
     scene: "Your lens defines the event's legacy. Whether scripting an engaging Reel from a routine update or mediating creative shoot disputes, you capture moments that matter."
   },
   "PR (Public Relations)": {
