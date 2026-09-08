@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEDxIGDTUW — Fresher Recruitment '26 | Bollywood Edition</title>
-  <!-- Google Fonts matching the official site -->
+  <title>TEDxIGDTU — Fresher Recruitment '26 | Bollywood Edition</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,14 +23,16 @@
       <a href="https://tedx-igdtuw.vercel.app/" class="logo-link">
         <div class="logo">
           <span class="ted">TED<span class="x">x</span></span>
-          <span class="igdtuw">IGDTUW</span>
+          <span class="igdtuw">IGDTU</span>
         </div>
       </a>
+
       <div class="nav-tagline">
         <span class="badge-filmi">
           <svg class="nav-svg-icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4zm-9 7h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
-          </svg> ORIENTATION'26
+          </svg>
+          ORIENTATION'26
         </span>
       </div>
     </div>
@@ -37,6 +40,7 @@
 
   <!-- Main Wrapper -->
   <main class="form-wrapper" id="mainWrapper">
+
     <!-- Hero -->
     <div class="form-hero">
       <div class="spotlight-stage-container">
@@ -45,15 +49,19 @@
             <path d="M40 8L5 68H35L50 8H40Z" fill="url(#beam-left)" opacity="0.65" />
             <path d="M80 8L70 68H100L85 8H80Z" fill="url(#beam-right)" opacity="0.65" />
           </g>
+
           <rect x="36" y="2" width="16" height="8" rx="2" fill="#222" stroke="#FFD700" stroke-width="1.5" />
           <rect x="76" y="2" width="16" height="8" rx="2" fill="#222" stroke="#EB0028" stroke-width="1.5" />
+
           <circle cx="44" cy="6" r="4" fill="#FFD700" class="flare-gold" />
           <circle cx="84" cy="6" r="4" fill="#FF5252" class="flare-red" />
+
           <defs>
             <linearGradient id="beam-left" x1="44" y1="8" x2="20" y2="68" gradientUnits="userSpaceOnUse">
               <stop stop-color="#FFD700" stop-opacity="0.8" />
               <stop offset="1" stop-color="#FFD700" stop-opacity="0" />
             </linearGradient>
+
             <linearGradient id="beam-right" x1="84" y1="8" x2="85" y2="68" gradientUnits="userSpaceOnUse">
               <stop stop-color="#EB0028" stop-opacity="0.8" />
               <stop offset="1" stop-color="#EB0028" stop-opacity="0" />
@@ -61,9 +69,17 @@
           </defs>
         </svg>
       </div>
+
       <div class="casting-label">🎬 THE CASTING CALL IS OPEN</div>
-      <h1 class="main-title"> LIGHTS, CAMERA, <span class="highlight-red">TED<span class="x-small">x</span>!</span></h1>
-      <p class="hero-subtext">Step into the spotlight. Claim your star role in IGDTUW's premier society team.</p>
+
+      <h1 class="main-title">
+        LIGHTS, CAMERA,
+        <span class="highlight-red">TED<span class="x-small">x</span>!</span>
+      </h1>
+
+      <p class="hero-subtext">
+        Step into the spotlight. Claim your star role in IGDTU's premier society team.
+      </p>
     </div>
 
     <!-- Progress Bar -->
@@ -72,10 +88,12 @@
         <span class="step-num">1</span>
         <span class="step-lbl">Star Credentials</span>
       </div>
+
       <div class="step-indicator" id="step-dot-2">
         <span class="step-num">2</span>
         <span class="step-lbl">Your Role</span>
       </div>
+
       <div class="step-indicator" id="step-dot-3">
         <span class="step-num">3</span>
         <span class="step-lbl">Final Take</span>
@@ -84,42 +102,62 @@
 
     <!-- Recruitment Form -->
     <form id="recruitmentForm" novalidate>
-      
+
       <!-- ================= PAGE 1 ================= -->
       <section class="form-page active" id="page-1">
+
         <div class="card-header">
           <h2 class="section-title">
             <svg class="inline-title-svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
-            </svg> Step 1: Student Profile
+            </svg>
+            Step 1: Student Profile
           </h2>
-          
         </div>
 
         <div class="form-group">
-          <label for="fullName">Full Name <span class="req">*</span></label>
+          <label for="fullName">
+            Full Name <span class="req">*</span>
+          </label>
           <input type="text" id="fullName" required />
-          <span class="error-msg" id="err-fullName">Please enter your name.</span>
+          <span class="error-msg" id="err-fullName">
+            Please enter your name.
+          </span>
         </div>
 
         <div class="form-group">
-          <label for="enrollmentNum">Enrollment Number <span class="req">*</span></label>
+          <label for="enrollmentNum">
+            Enrollment Number <span class="req">*</span>
+          </label>
           <input type="text" id="enrollmentNum" required />
-          <span class="error-msg" id="err-enrollmentNum">Please enter a valid enrollment number.</span>
+          <span class="error-msg" id="err-enrollmentNum">
+            Please enter a valid enrollment number.
+          </span>
         </div>
 
         <div class="form-row">
+
           <div class="form-group col">
-            <label for="year">Year <span class="req">*</span></label>
+            <label for="year">
+              Year <span class="req">*</span>
+            </label>
+
             <select id="year" required>
               <option value="" disabled selected>Select Year</option>
               <option value="1st Year">1st Year</option>
               <option value="2nd Year">2nd Year</option>
             </select>
-            <span class="error-msg" id="err-year">Select your year.</span>
+
+            <span class="error-msg" id="err-year">
+              Select your year.
+            </span>
           </div>
+
           <div class="form-group col">
-            <label for="branch">Branch <span class="req">*</span></label>
+            <label for="branch">
+              Branch <span class="req">*</span>
+            </label>
+
             <select id="branch" required>
               <option value="" disabled selected>Select Branch</option>
               <option value="CSE">CSE</option>
@@ -135,188 +173,546 @@
               <option value="BBA">BBA</option>
               <option value="Other">Other</option>
             </select>
-            <span class="error-msg" id="err-branch">Select your branch.</span>
+
+            <span class="error-msg" id="err-branch">
+              Select your branch.
+            </span>
           </div>
+
         </div>
 
         <div class="form-group">
-          <label for="phone">Phone Number <span class="req">*</span></label>
+          <label for="phone">
+            Phone Number <span class="req">*</span>
+          </label>
+
           <div class="input-with-prefix">
             <span class="prefix">+91</span>
-            <input type="tel" id="phone"  maxlength="10" required />
+            <input type="tel" id="phone" maxlength="10" required />
           </div>
-          <span class="error-msg" id="err-phone">Must be exactly 10 digits.</span>
+
+          <span class="error-msg" id="err-phone">
+            Must be exactly 10 digits.
+          </span>
         </div>
 
         <div class="form-group">
-          <label for="personalEmail">Personal Email <span class="req">*</span></label>
-          <input type="email" id="personalEmail" placeholder="yourname@gmail.com" required />
-          <span class="error-msg" id="err-personalEmail">Must end with @gmail.com</span>
+          <label for="personalEmail">
+            Personal Email <span class="req">*</span>
+          </label>
+
+          <input
+            type="email"
+            id="personalEmail"
+            placeholder="yourname@gmail.com"
+            required
+          />
+
+          <span class="error-msg" id="err-personalEmail">
+            Must end with @gmail.com
+          </span>
         </div>
 
         <div class="form-group">
-          <label for="collegeEmail">College Email ID (Optional)</label>
-          <input type="email" id="collegeEmail" placeholder="yourname0122025@igdtuw.ac.in" />
+          <label for="collegeEmail">
+            College Email ID (Optional)
+          </label>
+
+          <input
+            type="email"
+            id="collegeEmail"
+            placeholder="yourname0122025@igdtuw.ac.in"
+          />
         </div>
+
+        <!-- ================= PREFERENCE 1 ================= -->
 
         <div class="form-group domain-selection-group">
-          <label for="domain">Which role would you like to audition for? <span class="req">*</span></label>
-          <p class="question-hint">Every role has a Bollywood star waiting for you. Pick your scene.</p>
+
+          <label for="domain">
+            Preference 1 — Which role would you like to audition for?
+            <span class="req">*</span>
+          </label>
+
+          <p class="question-hint">
+            Every role has a Bollywood star waiting for you. Pick your scene.
+          </p>
+
           <select id="domain" required>
-            <option value="" disabled selected>🎬 Choose your role...</option>
-            <option value="Community and Delegate Affairs">🤝 Community & Delegate Affairs — The People Person</option>
-            <option value="Content and Writing">✍️ Content & Writing — The Wordsmith</option>
-            <option value="Events, Brands, and People">🎤 Events, Brands & People — The Showrunner</option>
-            <option value="Media and Communication">📹 Media & Communication — The Storyteller</option>
-            <option value="PR (Public Relations)">📣 PR — The Smooth Talker</option>
-            <option value="Creative, Strategy and Design">🎨 Creative, Strategy & Design — The Visionary</option>
-            <option value="Sponsorship and Strategic Alliances">💼 Sponsorship & Strategic Alliances — The Negotiator</option>
+            <option value="" disabled selected>
+              🎬 Choose your first preference...
+            </option>
+
+            <option value="Community and Delegate Affairs">
+              🤝 Community & Delegate Affairs — The People Person
+            </option>
+
+            <option value="Content and Writing">
+              ✍️ Content & Writing — The Wordsmith
+            </option>
+
+            <option value="Events, Brands, and People">
+              🎤 Events, Brands & People — The Showrunner
+            </option>
+
+            <option value="Media and Communication">
+              📹 Media & Communication — The Storyteller
+            </option>
+
+            <option value="PR (Public Relations)">
+              📣 PR — The Smooth Talker
+            </option>
+
+            <option value="Creative, Strategy and Design">
+              🎨 Creative, Strategy & Design — The Visionary
+            </option>
+
+            <option value="Sponsorship and Strategic Alliances">
+              💼 Sponsorship & Strategic Alliances — The Negotiator
+            </option>
           </select>
-          <span class="error-msg" id="err-domain">Please select a role.</span>
+
+          <span class="error-msg" id="err-domain">
+            Please select your first preference.
+          </span>
+
         </div>
 
+        <!-- ================= PREFERENCE 2 ================= -->
+
+        <div class="form-group domain-selection-group preference-two-group">
+
+          <label for="domain2">
+            Preference 2 — Another role you'd like to audition for
+            <span class="optional-label">(Optional)</span>
+          </label>
+
+          <p class="question-hint">
+            You may choose a second role. Leave this blank if you only want to
+            audition for your first preference.
+          </p>
+
+          <select id="domain2">
+            <option value="" selected>
+              🎬 Choose your second preference...
+            </option>
+
+            <option value="Community and Delegate Affairs">
+              🤝 Community & Delegate Affairs — The People Person
+            </option>
+
+            <option value="Content and Writing">
+              ✍️ Content & Writing — The Wordsmith
+            </option>
+
+            <option value="Events, Brands, and People">
+              🎤 Events, Brands & People — The Showrunner
+            </option>
+
+            <option value="Media and Communication">
+              📹 Media & Communication — The Storyteller
+            </option>
+
+            <option value="PR (Public Relations)">
+              📣 PR — The Smooth Talker
+            </option>
+
+            <option value="Creative, Strategy and Design">
+              🎨 Creative, Strategy & Design — The Visionary
+            </option>
+
+            <option value="Sponsorship and Strategic Alliances">
+              💼 Sponsorship & Strategic Alliances — The Negotiator
+            </option>
+          </select>
+
+          <span class="error-msg" id="err-domain2">
+            Please choose a different second preference.
+          </span>
+
+        </div>
+
+        <!-- Casting Preview -->
         <div class="casting-preview" id="castingPreview">
+
           <div class="preview-ticket">🎟️</div>
+
           <div>
-            <span class="preview-kicker">YOUR ROLE AWAITS</span>
-            <strong id="previewCharacter">Choose a domain to reveal your character.</strong>
-            <p id="previewDescription">Your Bollywood alter ego will appear here.</p>
+            <span class="preview-kicker">
+              YOUR ROLE AWAITS
+            </span>
+
+            <strong id="previewCharacter">
+              Choose a domain to reveal your character.
+            </strong>
+
+            <p id="previewDescription">
+              Your Bollywood alter ego will appear here.
+            </p>
           </div>
+
         </div>
 
         <div class="btn-container align-right">
-          <button type="button" class="btn btn-next" onclick="goToPage(2)">Enter Your Scene →</button>
+          <button
+            type="button"
+            class="btn btn-next"
+            onclick="goToPage(2)"
+          >
+            Enter Your Scene →
+          </button>
         </div>
+
       </section>
 
       <!-- ================= PAGE 2 ================= -->
+
       <section class="form-page" id="page-2">
+
         <div class="card-header">
+
           <h2 class="section-title">
             <svg class="inline-title-svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M19.8 4.2s-.4 0-.6.1L15 6.1l-2.4-3.1c-.2-.3-.6-.4-.9-.2L3.1 9.4c-.3.2-.4.6-.2.9l.7 1c.2.3.6.4.9.2l2.3-1.6 2.3 3c.2.3.6.4.9.2l8.6-6.1c.3-.2.4-.6.2-.9l-1-1.9zm-4.7 6.3L6.5 16.6l-.7-1 8.6-6.1.7 1z"/>
-            </svg> Step 2: Your Character Audition
+            </svg>
+            Step 2: Your Character Audition
           </h2>
-          <p class="section-desc" id="domain-title-desc">Your role has been cast. Now let's see what you bring to the scene.</p>
+
+          <p
+            class="section-desc"
+            id="domain-title-desc"
+          >
+            Your role has been cast. Now let's see what you bring to the scene.
+          </p>
+
         </div>
 
-        <!-- Compact Character Card -->
-        <div class="character-card compact" id="characterCard">
+        <!-- Main Character Card = Preference 1 -->
+
+        <div
+          class="character-card compact"
+          id="characterCard"
+        >
+
           <div class="character-inner">
-            <div class="character-icon" id="characterIcon">🎬</div>
-            <div class="character-info">
-              <span class="character-kicker">YOUR BOLLYWOOD ROLE</span>
-              <h3 id="characterName">Waiting for your casting...</h3>
-              <p id="characterTagline">Select your domain to reveal your role.</p>
+
+            <div
+              class="character-icon"
+              id="characterIcon"
+            >
+              🎬
             </div>
+
+            <div class="character-info">
+
+              <span class="character-kicker">
+                PREFERENCE 1 • YOUR BOLLYWOOD ROLE
+              </span>
+
+              <h3 id="characterName">
+                Waiting for your casting...
+              </h3>
+
+              <p id="characterTagline">
+                Select your domain to reveal your role.
+              </p>
+
+            </div>
+
           </div>
-          <div class="character-quote" id="characterQuote">"Every great story needs someone who knows how to steal the scene."</div>
+
+          <div
+            class="character-quote"
+            id="characterQuote"
+          >
+            "Every great story needs someone who knows how to steal the scene."
+          </div>
+
         </div>
 
-        <!-- Dynamic Questions Container -->
+        <!-- Dynamic Questions -->
         <div id="dynamic-domain-questions"></div>
 
         <div class="btn-container">
-          <button type="button" class="btn btn-back" onclick="goToPage(1)">← Recast Role</button>
-          <button type="button" class="btn btn-next" onclick="goToPage(3)">Final Take →</button>
+
+          <button
+            type="button"
+            class="btn btn-back"
+            onclick="goToPage(1)"
+          >
+            ← Recast Role
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-next"
+            onclick="goToPage(3)"
+          >
+            Final Take →
+          </button>
+
         </div>
+
       </section>
 
       <!-- ================= PAGE 3 ================= -->
+
       <section class="form-page" id="page-3">
+
         <div class="card-header">
+
           <h2 class="section-title">
-            <svg class="inline-title-svg star-gold" viewBox="0 0 24 24" fill="currentColor">
+
+            <svg
+              class="inline-title-svg star-gold"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-            </svg> Step 3: Final Take & Socials
+            </svg>
+
+            Step 3: Final Take & Socials
+
           </h2>
-          <p class="section-desc">One last scene before the director yells — CUT!</p>
+
+          <p class="section-desc">
+            One last scene before the director yells — CUT!
+          </p>
+
         </div>
 
         <div class="form-group">
-          <label for="socialFollow">Have you followed TEDxIGDTUW on Instagram & LinkedIn? <span class="req">*</span></label>
-          <select id="socialFollow" required>
-            <option value="" disabled selected>Select option</option>
-            <option value="Yes, followed both!">Yes, followed both!</option>
-            <option value="Doing it right now!">Doing it right now!</option>
-          </select>
-          <span class="error-msg" id="err-socialFollow">Please answer this field.</span>
+
+          <label for="socialFollow">
+            Why do you want to join TEDXIGDTU?
+            <span class="req">*</span>
+          </label>
+
+         <input
+            type="text"
+            id="socialHandle"
+            
+            required
+          />
+          <span
+            class="error-msg"
+            id="err-socialFollow"
+          >
+            Please answer this field.
+          </span>
+
         </div>
 
         <div class="form-group">
-          <label for="socialHandle">Your Instagram or LinkedIn Link / Handle <span class="req">*</span></label>
-          <input type="text" id="socialHandle" placeholder="e.g. instagram.com/yourhandle" required />
-          <span class="error-msg" id="err-socialHandle">Please provide your social link.</span>
+
+          <label for="socialHandle">
+            Follow TEDXIGDTU on Instagram and Linkldn and enter your account links
+            <span class="req">*</span>
+          </label>
+
+          <input
+            type="text"
+            id="socialHandle"
+            
+            required
+          />
+
+          <span
+            class="error-msg"
+            id="err-socialHandle"
+          >
+            Please provide your social link.
+          </span>
+
         </div>
 
         <div class="final-scene-card">
+
           <div class="clapper">
+
             <div class="clapper-top">
-              <span></span><span></span><span></span><span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+
             <div class="clapper-body">
-              TAKE<br><strong>01</strong>
+              TAKE<br>
+              <strong>01</strong>
             </div>
+
           </div>
+
           <div class="final-scene-copy">
-            <span class="gold-label">🎬 AND... ACTION!</span>
-            <h3>Your audition is ready for its final take.</h3>
-            <p>Check your answers, take a deep breath, and give us your best performance.</p>
+
+            <span class="gold-label">
+              🎬 AND... ACTION!
+            </span>
+
+            <h3>
+              Your audition is ready for its final take.
+            </h3>
+
+            <p>
+              Check your answers, take a deep breath, and give us your best performance.
+            </p>
+
           </div>
+
         </div>
 
         <div class="btn-container">
-          <button type="button" class="btn btn-back" onclick="goToPage(2)">← Back</button>
-          <button type="submit" class="btn btn-submit" id="submitBtn">🎬 SUBMIT MY AUDITION</button>
+
+          <button
+            type="button"
+            class="btn btn-back"
+            onclick="goToPage(2)"
+          >
+            ← Back
+          </button>
+
+          <button
+            type="submit"
+            class="btn btn-submit"
+            id="submitBtn"
+          >
+            🎬 SUBMIT MY AUDITION
+          </button>
+
         </div>
+
       </section>
+
     </form>
 
     <!-- ================= SUCCESS PAGE ================= -->
-    <section class="form-page" id="page-success">
+
+    <section
+      class="form-page"
+      id="page-success"
+    >
+
       <div class="success-card">
+
         <div class="success-film-frame">
-          <div class="success-ticket">🎟️</div>
-          <span>OFFICIAL CASTING RECEIPT</span>
+
+          <div class="success-ticket">
+            🎟️
+          </div>
+
+          <span>
+            OFFICIAL CASTING RECEIPT
+          </span>
+
         </div>
-        <div class="success-stamp">✓ FORM SUBMITTED</div>
+
+        <div class="success-stamp">
+          ✓ FORM SUBMITTED
+        </div>
+
         <div class="success-clapper">
+
           <div class="success-clapper-top">
-            <span></span><span></span><span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+
           <div class="success-clapper-body">
-            <small>TEDxIGDTUW</small>
-            <strong>IT'S A WRAP!</strong>
-            <small>TAKE 01 • SCENE COMPLETE</small>
+
+            <small>TEDxIGDTU</small>
+
+            <strong>
+              IT'S A WRAP!
+            </strong>
+
+            <small>
+              TAKE 01 • SCENE COMPLETE
+            </small>
+
           </div>
+
         </div>
-        <h1 class="success-heading">CUT! THAT'S A WRAP. 🎬</h1>
+
+        <h1 class="success-heading">
+          CUT! THAT'S A WRAP. 🎬
+        </h1>
+
         <div class="dialogue-box">
+
           <span class="dialogue-stars">✦</span>
-          <p>Main apni favourite hoon!<br>And now TEDxIGDTUW is going to be my absolute favourite too!</p>
+
+          <p>
+            Main apni favourite hoon!<br>
+            And now TEDxIGDTU is going to be my absolute favourite too!
+          </p>
+
           <span class="dialogue-stars">✦</span>
+
         </div>
+
         <div class="submitted-message">
-          <div class="check-circle">✓</div>
-          <div>
-            <strong>YOUR FORM HAS BEEN SUBMITTED</strong>
-            <p>Your audition has officially made it to our casting desk. Keep your eyes peeled for what's next!</p>
+
+          <div class="check-circle">
+            ✓
           </div>
+
+          <div>
+
+            <strong>
+              YOUR FORM HAS BEEN SUBMITTED
+            </strong>
+
+            <p>
+              Your audition has officially made it to our casting desk.
+              Keep your eyes peeled for what's next!
+            </p>
+
+          </div>
+
         </div>
+
         <div class="success-role-receipt">
-          <span>CASTING ROLE</span>
-          <strong id="successRole">TEDxIGDTUW Team</strong>
+
+          <span>
+            CASTING ROLE
+          </span>
+
+          <strong id="successRole">
+            TEDxIGDTU Team
+          </strong>
+
         </div>
+
         <div class="timer-box">
-          🎥 Returning to the main TEDxIGDTUW portal in <span id="countdown">7</span> seconds...
+
+          🎥 Returning to the main TEDxIGDTU portal in
+          <span id="countdown">7</span>
+          seconds...
+
         </div>
+
         <div class="btn-container align-center">
-          <a href="https://tedx-igdtuw.vercel.app/" class="btn btn-next">Return to Main Website 🌐</a>
+
+          <a
+            href="https://tedx-igdtuw.vercel.app/"
+            class="btn btn-next"
+          >
+            Return to Main Website 🌐
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
   <script src="script.js"></script>
+
 </body>
 </html>
