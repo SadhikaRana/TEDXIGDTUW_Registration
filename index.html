@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEDxIGDTU — Fresher Recruitment '26 | Bollywood Edition</title>
+  <title>TEDxIGDTU | Fresher Recruitment '26</title>
 
+  <!-- Main website inspired typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- Ambient Lights -->
   <div class="ambient-glow glow-red"></div>
-  <div class="ambient-glow glow-gold"></div>
+  <div class="ambient-glow glow-coral"></div>
 
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
+
       <a href="https://tedx-igdtuw.vercel.app/" class="logo-link">
         <div class="logo">
           <span class="ted">TED<span class="x">x</span></span>
@@ -29,12 +35,22 @@
 
       <div class="nav-tagline">
         <span class="badge-filmi">
-          <svg class="nav-svg-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4zm-9 7h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+          <svg class="nav-svg-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+            <path
+              d="M8 3v18M16 3v18M4 8h4M16 8h4M4 16h4M16 16h4"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
           </svg>
-          ORIENTATION'26
+          ORIENTATION '26
         </span>
       </div>
+
     </div>
   </nav>
 
@@ -43,34 +59,108 @@
 
     <!-- Hero -->
     <div class="form-hero">
+
       <div class="spotlight-stage-container">
-        <svg class="stage-spotlight-svg" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="stage-spotlight-svg"
+          viewBox="0 0 120 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
           <g class="animated-beams">
-            <path d="M40 8L5 68H35L50 8H40Z" fill="url(#beam-left)" opacity="0.65" />
-            <path d="M80 8L70 68H100L85 8H80Z" fill="url(#beam-right)" opacity="0.65" />
+            <path
+              d="M40 8L5 68H35L50 8H40Z"
+              fill="url(#beam-left)"
+              opacity="0.55"
+            />
+            <path
+              d="M80 8L70 68H100L85 8H80Z"
+              fill="url(#beam-right)"
+              opacity="0.55"
+            />
           </g>
 
-          <rect x="36" y="2" width="16" height="8" rx="2" fill="#222" stroke="#FFD700" stroke-width="1.5" />
-          <rect x="76" y="2" width="16" height="8" rx="2" fill="#222" stroke="#EB0028" stroke-width="1.5" />
+          <rect
+            x="36"
+            y="2"
+            width="16"
+            height="8"
+            rx="2"
+            fill="#151515"
+            stroke="#EB0028"
+            stroke-width="1.5"
+          />
 
-          <circle cx="44" cy="6" r="4" fill="#FFD700" class="flare-gold" />
-          <circle cx="84" cy="6" r="4" fill="#FF5252" class="flare-red" />
+          <rect
+            x="76"
+            y="2"
+            width="16"
+            height="8"
+            rx="2"
+            fill="#151515"
+            stroke="#FF6670"
+            stroke-width="1.5"
+          />
+
+          <circle
+            cx="44"
+            cy="6"
+            r="4"
+            fill="#EB0028"
+            class="flare-red"
+          />
+
+          <circle
+            cx="84"
+            cy="6"
+            r="4"
+            fill="#FF6670"
+            class="flare-coral"
+          />
 
           <defs>
-            <linearGradient id="beam-left" x1="44" y1="8" x2="20" y2="68" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#FFD700" stop-opacity="0.8" />
-              <stop offset="1" stop-color="#FFD700" stop-opacity="0" />
+            <linearGradient
+              id="beam-left"
+              x1="44"
+              y1="8"
+              x2="20"
+              y2="68"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#EB0028" stop-opacity="0.55" />
+              <stop offset="1" stop-color="#EB0028" stop-opacity="0" />
             </linearGradient>
 
-            <linearGradient id="beam-right" x1="84" y1="8" x2="85" y2="68" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#EB0028" stop-opacity="0.8" />
-              <stop offset="1" stop-color="#EB0028" stop-opacity="0" />
+            <linearGradient
+              id="beam-right"
+              x1="84"
+              y1="8"
+              x2="85"
+              y2="68"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FF6670" stop-opacity="0.45" />
+              <stop offset="1" stop-color="#FF6670" stop-opacity="0" />
             </linearGradient>
           </defs>
         </svg>
       </div>
 
-      <div class="casting-label">🎬 THE CASTING CALL IS OPEN</div>
+      <div class="casting-label">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z"
+            stroke="currentColor"
+            stroke-width="1.7"
+          />
+          <path
+            d="m10 9 5 3-5 3V9Z"
+            fill="currentColor"
+          />
+        </svg>
+        THE CASTING CALL IS OPEN
+      </div>
 
       <h1 class="main-title">
         LIGHTS, CAMERA,
@@ -80,10 +170,12 @@
       <p class="hero-subtext">
         Step into the spotlight. Claim your star role in IGDTU's premier society team.
       </p>
+
     </div>
 
     <!-- Progress Bar -->
     <div class="progress-bar-container">
+
       <div class="step-indicator active" id="step-dot-1">
         <span class="step-num">1</span>
         <span class="step-lbl">Star Credentials</span>
@@ -98,20 +190,40 @@
         <span class="step-num">3</span>
         <span class="step-lbl">Final Take</span>
       </div>
+
     </div>
 
     <!-- Recruitment Form -->
     <form id="recruitmentForm" novalidate>
 
       <!-- ================= PAGE 1 ================= -->
+
       <section class="form-page active" id="page-1">
 
         <div class="card-header">
           <h2 class="section-title">
-            <svg class="inline-title-svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+
+            <svg
+              class="inline-title-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 4h14v16H5z"
+                stroke="currentColor"
+                stroke-width="1.7"
+              />
+              <path
+                d="M8 8h8M8 12h8M8 16h5"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
             </svg>
+
             Step 1: Student Profile
+
           </h2>
         </div>
 
@@ -119,7 +231,9 @@
           <label for="fullName">
             Full Name <span class="req">*</span>
           </label>
+
           <input type="text" id="fullName" required />
+
           <span class="error-msg" id="err-fullName">
             Please enter your name.
           </span>
@@ -129,7 +243,9 @@
           <label for="enrollmentNum">
             Enrollment Number <span class="req">*</span>
           </label>
+
           <input type="text" id="enrollmentNum" required />
+
           <span class="error-msg" id="err-enrollmentNum">
             Please enter a valid enrollment number.
           </span>
@@ -225,12 +341,12 @@
           />
         </div>
 
-        <!-- ================= PREFERENCE 1 ================= -->
+        <!-- Preference 1 -->
 
         <div class="form-group domain-selection-group">
 
           <label for="domain">
-            Preference 1 — Which role would you like to audition for?
+            Preference 1: Which role would you like to audition for?
             <span class="req">*</span>
           </label>
 
@@ -239,37 +355,39 @@
           </p>
 
           <select id="domain" required>
+
             <option value="" disabled selected>
-              🎬 Choose your first preference...
+              Choose your first preference
             </option>
 
             <option value="Community and Delegate Affairs">
-              🤝 Community & Delegate Affairs — The People Person
+              Community & Delegate Affairs: The People Person
             </option>
 
             <option value="Content and Writing">
-              ✍️ Content & Writing — The Wordsmith
+              Content & Writing: The Wordsmith
             </option>
 
             <option value="Events, Brands, and People">
-              🎤 Events, Brands & People — The Showrunner
+              Events, Brands & People: The Showrunner
             </option>
 
             <option value="Media and Communication">
-              📹 Media & Communication — The Storyteller
+              Media & Communication: The Storyteller
             </option>
 
             <option value="PR (Public Relations)">
-              📣 PR — The Smooth Talker
+              PR: The Smooth Talker
             </option>
 
             <option value="Creative, Strategy and Design">
-              🎨 Creative, Strategy & Design — The Visionary
+              Creative, Strategy & Design: The Visionary
             </option>
 
             <option value="Sponsorship and Strategic Alliances">
-              💼 Sponsorship & Strategic Alliances — The Negotiator
+              Sponsorship & Strategic Alliances: The Negotiator
             </option>
+
           </select>
 
           <span class="error-msg" id="err-domain">
@@ -278,52 +396,53 @@
 
         </div>
 
-        <!-- ================= PREFERENCE 2 ================= -->
+        <!-- Preference 2 -->
 
         <div class="form-group domain-selection-group preference-two-group">
 
           <label for="domain2">
-            Preference 2 — Another role you'd like to audition for
+            Preference 2: Another role you'd like to audition for
             <span class="optional-label">(Optional)</span>
           </label>
 
           <p class="question-hint">
-            You may choose a second role. Leave this blank if you only want to
-            audition for your first preference.
+            You may choose a second role. Leave this blank if you only want to audition for your first preference.
           </p>
 
           <select id="domain2">
+
             <option value="" selected>
-              🎬 Choose your second preference...
+              Choose your second preference
             </option>
 
             <option value="Community and Delegate Affairs">
-              🤝 Community & Delegate Affairs — The People Person
+              Community & Delegate Affairs: The People Person
             </option>
 
             <option value="Content and Writing">
-              ✍️ Content & Writing — The Wordsmith
+              Content & Writing: The Wordsmith
             </option>
 
             <option value="Events, Brands, and People">
-              🎤 Events, Brands & People — The Showrunner
+              Events, Brands & People: The Showrunner
             </option>
 
             <option value="Media and Communication">
-              📹 Media & Communication — The Storyteller
+              Media & Communication: The Storyteller
             </option>
 
             <option value="PR (Public Relations)">
-              📣 PR — The Smooth Talker
+              PR: The Smooth Talker
             </option>
 
             <option value="Creative, Strategy and Design">
-              🎨 Creative, Strategy & Design — The Visionary
+              Creative, Strategy & Design: The Visionary
             </option>
 
             <option value="Sponsorship and Strategic Alliances">
-              💼 Sponsorship & Strategic Alliances — The Negotiator
+              Sponsorship & Strategic Alliances: The Negotiator
             </option>
+
           </select>
 
           <span class="error-msg" id="err-domain2">
@@ -333,9 +452,24 @@
         </div>
 
         <!-- Casting Preview -->
+
         <div class="casting-preview" id="castingPreview">
 
-          <div class="preview-ticket">🎟️</div>
+          <div class="preview-ticket">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M9 8v8M12 8v8M15 8v8"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
 
           <div>
             <span class="preview-kicker">
@@ -354,13 +488,16 @@
         </div>
 
         <div class="btn-container align-right">
+
           <button
             type="button"
             class="btn btn-next"
             onclick="goToPage(2)"
           >
-            Enter Your Scene →
+            Enter Your Scene
+            <span class="btn-arrow">→</span>
           </button>
+
         </div>
 
       </section>
@@ -372,22 +509,35 @@
         <div class="card-header">
 
           <h2 class="section-title">
-            <svg class="inline-title-svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19.8 4.2s-.4 0-.6.1L15 6.1l-2.4-3.1c-.2-.3-.6-.4-.9-.2L3.1 9.4c-.3.2-.4.6-.2.9l.7 1c.2.3.6.4.9.2l2.3-1.6 2.3 3c.2.3.6.4.9.2l8.6-6.1c.3-.2.4-.6.2-.9l-1-1.9zm-4.7 6.3L6.5 16.6l-.7-1 8.6-6.1.7 1z"/>
+
+            <svg
+              class="inline-title-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+              />
+              <path
+                d="m10 8 6 4-6 4V8Z"
+                fill="currentColor"
+              />
             </svg>
+
             Step 2: Your Character Audition
+
           </h2>
 
-          <p
-            class="section-desc"
-            id="domain-title-desc"
-          >
+          <p class="section-desc" id="domain-title-desc">
             Your role has been cast. Now let's see what you bring to the scene.
           </p>
 
         </div>
 
-        <!-- Main Character Card = Preference 1 -->
+        <!-- Main Character Card -->
 
         <div
           class="character-card compact"
@@ -399,14 +549,12 @@
             <div
               class="character-icon"
               id="characterIcon"
-            >
-              🎬
-            </div>
+            ></div>
 
             <div class="character-info">
 
               <span class="character-kicker">
-                PREFERENCE 1 • YOUR BOLLYWOOD ROLE
+                PREFERENCE 1 | YOUR BOLLYWOOD ROLE
               </span>
 
               <h3 id="characterName">
@@ -431,6 +579,7 @@
         </div>
 
         <!-- Dynamic Questions -->
+
         <div id="dynamic-domain-questions"></div>
 
         <div class="btn-container">
@@ -448,7 +597,8 @@
             class="btn btn-next"
             onclick="goToPage(3)"
           >
-            Final Take →
+            Final Take
+            <span class="btn-arrow">→</span>
           </button>
 
         </div>
@@ -464,11 +614,17 @@
           <h2 class="section-title">
 
             <svg
-              class="inline-title-svg star-gold"
+              class="inline-title-svg"
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="none"
+              aria-hidden="true"
             >
-              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+              <path
+                d="m12 3 2.7 5.47 6.04.88-4.37 4.26 1.03 6.02L12 16.8l-5.4 2.83 1.03-6.02-4.37-4.26 6.04-.88L12 3Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+              />
             </svg>
 
             Step 3: Final Take & Socials
@@ -476,7 +632,7 @@
           </h2>
 
           <p class="section-desc">
-            One last scene before the director yells — CUT!
+            One last scene before the director calls cut.
           </p>
 
         </div>
@@ -484,16 +640,16 @@
         <div class="form-group">
 
           <label for="socialFollow">
-            Why do you want to join TEDXIGDTU?
+            Why do you want to join TEDxIGDTU?
             <span class="req">*</span>
           </label>
 
-         <input
+          <input
             type="text"
-            id="socialHandle"
-            
+            id="socialFollow"
             required
           />
+
           <span
             class="error-msg"
             id="err-socialFollow"
@@ -506,22 +662,22 @@
         <div class="form-group">
 
           <label for="socialHandle">
-            Follow TEDXIGDTU on Instagram and Linkldn and enter your account links
+            Follow TEDxIGDTU on Instagram and LinkedIn and enter your account links
             <span class="req">*</span>
           </label>
 
           <input
             type="text"
             id="socialHandle"
-            
             required
+            placeholder="Instagram + LinkedIn links"
           />
 
           <span
             class="error-msg"
             id="err-socialHandle"
           >
-            Please provide your social link.
+            Please provide your social links.
           </span>
 
         </div>
@@ -546,8 +702,8 @@
 
           <div class="final-scene-copy">
 
-            <span class="gold-label">
-              🎬 AND... ACTION!
+            <span class="accent-label">
+              AND... ACTION!
             </span>
 
             <h3>
@@ -577,7 +733,7 @@
             class="btn btn-submit"
             id="submitBtn"
           >
-            🎬 SUBMIT MY AUDITION
+            Submit My Audition
           </button>
 
         </div>
@@ -598,7 +754,18 @@
         <div class="success-film-frame">
 
           <div class="success-ticket">
-            🎟️
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M9 8v8M12 8v8M15 8v8"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+            </svg>
           </div>
 
           <span>
@@ -608,7 +775,7 @@
         </div>
 
         <div class="success-stamp">
-          ✓ FORM SUBMITTED
+          FORM SUBMITTED
         </div>
 
         <div class="success-clapper">
@@ -630,7 +797,7 @@
             </strong>
 
             <small>
-              TAKE 01 • SCENE COMPLETE
+              TAKE 01 | SCENE COMPLETE
             </small>
 
           </div>
@@ -638,7 +805,7 @@
         </div>
 
         <h1 class="success-heading">
-          CUT! THAT'S A WRAP. 🎬
+          CUT! THAT'S A WRAP.
         </h1>
 
         <div class="dialogue-box">
@@ -689,7 +856,7 @@
 
         <div class="timer-box">
 
-          🎥 Returning to the main TEDxIGDTU portal in
+          Returning to the main TEDxIGDTU portal in
           <span id="countdown">7</span>
           seconds...
 
@@ -701,7 +868,7 @@
             href="https://tedx-igdtuw.vercel.app/"
             class="btn btn-next"
           >
-            Return to Main Website 🌐
+            Return to Main Website
           </a>
 
         </div>
