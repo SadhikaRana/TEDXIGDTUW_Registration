@@ -4,7 +4,7 @@
    ========================================================= */
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx613pKHKn3KZvBk6ZR-IwKrouwyWV_Y1pbSz5GqBgV2KMwJ7ilVY6QvC_MypZiXZkh/exec";
+  "https://script.google.com/macros/s/AKfycbwBEAsS87G724wlHsf5Sm_13fUt3TeMNuFD8PsFscHj8SEOK2Fx0sn4KfqwTo-hugmN0Q/exec";
 
 
 /* =========================================================
@@ -420,10 +420,10 @@ function updateCastingPreview() {
 
     preview.classList.remove("revealed");
 
-    character.textContent =
+    character.innerHTML =
       "Choose a domain to reveal your character.";
 
-    description.textContent =
+    description.innerHTML =
       "Your Bollywood alter ego will appear here.";
 
     return;
@@ -433,11 +433,23 @@ function updateCastingPreview() {
 
   preview.classList.add("revealed");
 
-  let characterText =
-    `Preference 1: ${data1.character} | ${data1.role}`;
+  let characterHTML = `
+    <div class="preview-preference">
 
-  let descriptionText =
-    data1.tagline;
+      <span class="preview-preference-label">
+        PREFERENCE 1
+      </span>
+
+      <strong>
+        ${data1.character} | ${data1.role}
+      </strong>
+
+      <div class="preview-preference-description">
+        ${data1.tagline}
+      </div>
+
+    </div>
+  `;
 
   if (
     preference2 &&
@@ -446,15 +458,28 @@ function updateCastingPreview() {
 
     const data2 = domainData[preference2];
 
-    characterText +=
-      ` | Preference 2: ${data2.character} | ${data2.role}`;
+    characterHTML += `
+      <div class="preview-preference">
 
-    descriptionText =
-      `${data1.tagline} Second choice: ${data2.tagline}`;
+        <span class="preview-preference-label">
+          PREFERENCE 2
+        </span>
+
+        <strong>
+          ${data2.character} | ${data2.role}
+        </strong>
+
+        <div class="preview-preference-description">
+          ${data2.tagline}
+        </div>
+
+      </div>
+    `;
   }
 
-  character.textContent = characterText;
-  description.textContent = descriptionText;
+  character.innerHTML = characterHTML;
+
+  description.innerHTML = "";
 }
 
 

@@ -852,11 +852,48 @@ textarea {
   line-height: 1.4;
 }
 
+.preview-preference {
+  display: block;
+  width: 100%;
+}
+
+.preview-preference + .preview-preference {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 102, 112, 0.16);
+}
+
+.preview-preference-label {
+  display: block;
+  color: var(--ted-red);
+  font-size: 0.57rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 5px;
+}
+
+.preview-preference strong {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  margin-bottom: 5px;
+}
+
+.preview-preference-description {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  margin-top: 3px;
+}
+
+.preview-description-second {
+  margin-top: 5px;
+}
+
 .casting-preview p {
   color: var(--text-muted);
-
   font-size: 0.72rem;
-
   line-height: 1.45;
 }
 
